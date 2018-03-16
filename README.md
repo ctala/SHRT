@@ -119,7 +119,7 @@ authorization : `JWT`
 * **Respuesta:** 
   ```json
     {
-    msg:"no auth"
+    "msg":"no auth"
     }
   ```
 ## Obtener mis short links
@@ -134,16 +134,16 @@ authorization : `JWT`
   * **Code:** 200 
   * **Respuesta:** 
   ```json
-    [{id: 1, 
-    url: "http://facebook.com", 
-    createdAt: "2018-03-15T20:03:42.000Z",
-    records:[
-          {id: 1,
-          ip: "::ffff:192.168.1.200",
-          origin: null,
-          url_id:1,
-          createdAt: "2018-03-15T20:03:42.000Z",
-          user_agent:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36"
+    [{"id": 1, 
+    "url": "http://facebook.com", 
+    "createdAt": "2018-03-15T20:03:42.000Z",
+    "records":[
+          {"id": 1,
+          "ip": "::ffff:192.168.1.200",
+          "origin": null,
+          "url_id":1,
+          "createdAt": "2018-03-15T20:03:42.000Z",
+          "user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36"
           }...
      },
     .
@@ -156,6 +156,6 @@ authorization : `JWT`
 * **Respuesta:** 
   ```json
     {
-    msg:"no auth"
+    "msg":"no auth"
     }
   ```

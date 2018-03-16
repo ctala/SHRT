@@ -1,6 +1,10 @@
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize('Naito', 'root', 'secret', {
-  dialect: 'mysql'
+const dotenv = require('dotenv');
+dotenv.load()
+const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWD, {
+  dialect: 'mysql',
+   port: process.env.DB_PORT,
+   host: process.env.DB_HOST,
 });
 global.sequelize=sequelize
 global.models={}

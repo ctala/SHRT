@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    build: .
+    volumes:
+      - ./docker/setup:/opt/setup/
+      - ./BackEnd:/opt/BackEnd
+      - ./FrontEnd:/opt/FrontEnd/
+      - ./docker/nginx:/etc/nginx/sites-enabled
+    command: bash
+    ports:
+      - '8000:80'
+    depends_on:
+      - mysql

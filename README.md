@@ -80,7 +80,7 @@ Iniciar session con el objetivo de obtener el token JWT para operar con las llam
     {
      "status":true,
      "msg":"Login Correcto",
-     "domain":"<Dominio configuardo .env>"
+     "domain":"<Dominio configuardo .env>",
      "user": {
             "id":1
             "name":"naito",

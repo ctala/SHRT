@@ -82,7 +82,7 @@ Iniciar session con el objetivo de obtener el token JWT para operar con las llam
      "msg":"Login Correcto",
      "domain":"<Dominio configuardo .env>",
      "user": {
-            "id":1
+            "id":1,
             "name":"naito",
             "lastname":"tala"
           }
@@ -144,11 +144,8 @@ authorization : `JWT`
           "url_id":1,
           "createdAt": "2018-03-15T20:03:42.000Z",
           "user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36"
-          }...
-     },
-    .
-    .
-    .
+          }
+     }
     ]
   ```
 * **Respuesta No autorizada:**
